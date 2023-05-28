@@ -8,4 +8,8 @@ class Magazine
         @@all << self
     end
 
+    def contributors
+        Article.all.filter { |article| article.magazine == self }.map { |article| article.author.name }.uniq
+    end
+
 end
