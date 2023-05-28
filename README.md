@@ -26,7 +26,7 @@ Build out all of the methods listed in the deliverables. The methods are listed 
 
 **Remember!** This code challenge does not have tests. You cannot run `rspec` and you cannot run `learn`. You'll need to create your own sample instances so that you can try out your code on your own. Make sure your associations and methods work in the console before submitting.
 
-We've provided you with a tool that you can use to test your code. To use it, run `ruby tools/console.rb` from the command line. This will start a `pry` session with your classes defined. You can test out the methods that you write here. You can add code to the `tools/console.rb` file to define variables and create sample instances of your objects.
+We've provided you with a tool that you can use to test your code. To use it, run `ruby bin/run.rb` from the command line. This will start a `pry` session with your classes defined. You can test out the methods that you write here. You can add code to the `ruby bin/run.rb` file to define variables and create sample instances of your objects.
 
 Writing error-free code is more important than completing all of the deliverables listed - prioritize writing methods that work over writing more methods that don't work. You should test your code in the console as you write.
 

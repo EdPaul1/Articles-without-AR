@@ -8,6 +8,10 @@ class Magazine
         @@all << self
     end
 
+    def self.all
+        @@all
+    end
+
     def contributors
         Article.all.filter { |article| article.magazine == self }.map { |article| article.author.name }.uniq
     end
@@ -21,7 +25,8 @@ class Magazine
     end
     
     def contributing_authors
-        authors = Article.all.select { |article| article.magazine == self }.map { |article| article.author } authors.select { |author| authors.count(author) > 2 }
+        authors = Article.all.select { |article| article.magazine == self }.map { |article| article.author }
+        authors.select { |author| authors.count(author) > 2 }
     end
 
 end

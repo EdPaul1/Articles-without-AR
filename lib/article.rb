@@ -9,6 +9,10 @@ class Article
         @@all << self
     end
 
+    def self.all
+        @@all
+    end
+
     def author
         @author
     end
